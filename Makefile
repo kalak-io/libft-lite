@@ -6,7 +6,7 @@
 #    By: cjacquem <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/10/26 20:33:21 by cjacquem          #+#    #+#              #
-#    Updated: 2017/02/15 14:59:01 by cjacquem         ###   ########.fr        #
+#    Updated: 2017/02/15 15:20:29 by cjacquem         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -108,11 +108,11 @@ all: $(NAME)
 $(NAME): $(OBJ)
 		ar rc $@ $(OBJ)
 		ranlib $@
-		printf $(GREEN)" $* compiled!\n"$(EOC)
+		printf $(CYAN)" $* compiled!\n"$(EOC)
 
 $(OBJDIR)%.o: $(SRCDIR)%.c $(OBJF)
 		$(CC) $(FLAG) -c $< -o $@ $(INC)
-		printf $(GREEN)"|"$(EOC)
+		printf $(CYAN)"|"$(EOC)
 
 $(OBJF):
 		test -d $(OBJDIR) || mkdir $(OBJDIR)
