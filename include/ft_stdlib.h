@@ -13,16 +13,10 @@
 #ifndef FT_STDLIB_H
 # define FT_STDLIB_H
 
-# include <stdio.h>
+# include <stddef.h>
 
 int					ft_atoi(const char *s);
-char				*ft_ctoa(char c);
-char				*ft_getenv(const char *name);
 char				*ft_itoa(int n);
-char				*ft_itoa_base(int value, int base);
-char				*ft_lltoa_base(long long value, int base);
-char				*ft_ltoa(long n);
-char				*ft_ltoa_base(long value, int base);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 
